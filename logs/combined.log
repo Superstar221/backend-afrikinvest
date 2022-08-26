@@ -1,0 +1,169 @@
+2022-03-21 15:27:29 error: ENOENT: no such file or directory, open './dist/output/policies.combined.json'
+2022-03-21 15:27:29 info: Initializing ORM connection...
+2022-03-21 15:27:29 error: TypeORMError: No connection options were found in any orm configuration files.
+    at new TypeORMError (/home/bacarif/work/other/backend-afrikinvest/node_modules/typeorm/error/TypeORMError.js:9:28)
+    at ConnectionOptionsReader.<anonymous> (/home/bacarif/work/other/backend-afrikinvest/node_modules/typeorm/connection/ConnectionOptionsReader.js:40:35)
+    at step (/home/bacarif/work/other/backend-afrikinvest/node_modules/typeorm/node_modules/tslib/tslib.js:143:27)
+    at Object.next (/home/bacarif/work/other/backend-afrikinvest/node_modules/typeorm/node_modules/tslib/tslib.js:124:57)
+    at fulfilled (/home/bacarif/work/other/backend-afrikinvest/node_modules/typeorm/node_modules/tslib/tslib.js:114:62)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2022-03-21 15:29:10 info: Initializing ORM connection...
+2022-03-21 15:29:10 error: Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1157:16)
+2022-03-21 15:52:25 info: Initializing ORM connection...
+2022-03-21 15:52:25 error: Error: Access denied for user 'root'@'localhost'
+    at Packet.asError (/home/bacarif/work/other/backend-afrikinvest/node_modules/mysql2/lib/packets/packet.js:728:17)
+    at ClientHandshake.execute (/home/bacarif/work/other/backend-afrikinvest/node_modules/mysql2/lib/commands/command.js:29:26)
+    at PoolConnection.handlePacket (/home/bacarif/work/other/backend-afrikinvest/node_modules/mysql2/lib/connection.js:456:32)
+    at PacketParser.onPacket (/home/bacarif/work/other/backend-afrikinvest/node_modules/mysql2/lib/connection.js:85:12)
+    at PacketParser.executeStart (/home/bacarif/work/other/backend-afrikinvest/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.<anonymous> (/home/bacarif/work/other/backend-afrikinvest/node_modules/mysql2/lib/connection.js:92:25)
+    at Socket.emit (node:events:520:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Socket.Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2022-03-21 15:53:44 info: Initializing ORM connection...
+2022-03-21 15:53:44 error: Error: Access denied for user 'root'@'localhost'
+    at Packet.asError (/home/bacarif/work/other/backend-afrikinvest/node_modules/mysql2/lib/packets/packet.js:728:17)
+    at ClientHandshake.execute (/home/bacarif/work/other/backend-afrikinvest/node_modules/mysql2/lib/commands/command.js:29:26)
+    at PoolConnection.handlePacket (/home/bacarif/work/other/backend-afrikinvest/node_modules/mysql2/lib/connection.js:456:32)
+    at PacketParser.onPacket (/home/bacarif/work/other/backend-afrikinvest/node_modules/mysql2/lib/connection.js:85:12)
+    at PacketParser.executeStart (/home/bacarif/work/other/backend-afrikinvest/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.<anonymous> (/home/bacarif/work/other/backend-afrikinvest/node_modules/mysql2/lib/connection.js:92:25)
+    at Socket.emit (node:events:520:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Socket.Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2022-03-21 15:56:12 info: Initializing ORM connection...
+2022-03-21 15:56:12 error: Error: Unknown database 'expressjs_api'
+    at Packet.asError (/home/bacarif/work/other/backend-afrikinvest/node_modules/mysql2/lib/packets/packet.js:728:17)
+    at ClientHandshake.execute (/home/bacarif/work/other/backend-afrikinvest/node_modules/mysql2/lib/commands/command.js:29:26)
+    at PoolConnection.handlePacket (/home/bacarif/work/other/backend-afrikinvest/node_modules/mysql2/lib/connection.js:456:32)
+    at PacketParser.onPacket (/home/bacarif/work/other/backend-afrikinvest/node_modules/mysql2/lib/connection.js:85:12)
+    at PacketParser.executeStart (/home/bacarif/work/other/backend-afrikinvest/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.<anonymous> (/home/bacarif/work/other/backend-afrikinvest/node_modules/mysql2/lib/connection.js:92:25)
+    at Socket.emit (node:events:520:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Socket.Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2022-03-21 15:58:32 info: Initializing ORM connection...
+2022-03-21 15:58:33 error: TypeError: Cannot set properties of undefined (setting 'jwt')
+    at Authenticator.use (/home/bacarif/work/other/backend-afrikinvest/node_modules/passport/lib/authenticator.js:58:26)
+    at AuthService.initStrategies (/home/bacarif/work/other/backend-afrikinvest/dist/services/auth/index.js:99:28)
+    at registerMiddleware (/home/bacarif/work/other/backend-afrikinvest/dist/api/middleware/index.js:31:30)
+    at initRestRoutes (/home/bacarif/work/other/backend-afrikinvest/dist/api/routes.js:15:41)
+    at new Server (/home/bacarif/work/other/backend-afrikinvest/dist/api/server.js:12:37)
+    at /home/bacarif/work/other/backend-afrikinvest/dist/app.js:32:25
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/bacarif/work/other/backend-afrikinvest/dist/app.js:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2022-03-21 16:14:25 info: Initializing ORM connection...
+2022-03-21 16:14:25 error: RangeError: The redis url must begin with slashes "//" or contain slashes after the redis protocol
+    at createClient (/home/bacarif/work/other/backend-afrikinvest/node_modules/redis/lib/createClient.js:61:19)
+    at exports.createClient (/home/bacarif/work/other/backend-afrikinvest/node_modules/redis/index.js:1089:41)
+    at Function.connect (/home/bacarif/work/other/backend-afrikinvest/dist/services/redis.js:21:48)
+    at /home/bacarif/work/other/backend-afrikinvest/dist/app.js:30:34
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/bacarif/work/other/backend-afrikinvest/dist/app.js:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2022-03-21 16:25:56 info: Initializing ORM connection...
+2022-03-21 16:25:56 error: TypeError: Cannot set properties of undefined (setting 'jwt')
+    at Authenticator.use (/home/bacarif/work/other/backend-afrikinvest/node_modules/passport/lib/authenticator.js:58:26)
+    at AuthService.initStrategies (/home/bacarif/work/other/backend-afrikinvest/dist/services/auth/index.js:99:28)
+    at registerMiddleware (/home/bacarif/work/other/backend-afrikinvest/dist/api/middleware/index.js:31:30)
+    at initRestRoutes (/home/bacarif/work/other/backend-afrikinvest/dist/api/routes.js:15:41)
+    at new Server (/home/bacarif/work/other/backend-afrikinvest/dist/api/server.js:12:37)
+    at /home/bacarif/work/other/backend-afrikinvest/dist/app.js:32:25
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/bacarif/work/other/backend-afrikinvest/dist/app.js:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2022-03-21 16:28:51 info: Initializing ORM connection...
+2022-03-21 16:28:51 error: TypeError: Cannot set properties of undefined (setting 'jwt')
+    at Authenticator.use (/home/bacarif/work/other/backend-afrikinvest/node_modules/passport/lib/authenticator.js:58:26)
+    at AuthService.initStrategies (/home/bacarif/work/other/backend-afrikinvest/dist/services/auth/index.js:99:28)
+    at registerMiddleware (/home/bacarif/work/other/backend-afrikinvest/dist/api/middleware/index.js:31:30)
+    at initRestRoutes (/home/bacarif/work/other/backend-afrikinvest/dist/api/routes.js:15:41)
+    at new Server (/home/bacarif/work/other/backend-afrikinvest/dist/api/server.js:12:37)
+    at /home/bacarif/work/other/backend-afrikinvest/dist/app.js:32:25
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/bacarif/work/other/backend-afrikinvest/dist/app.js:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2022-03-21 16:29:09 info: Initializing ORM connection...
+2022-03-21 16:29:09 info: node server is listening on port 3000 in development mode
+2022-03-21 16:29:41 error: TypeError: Cannot read properties of undefined (reading 'authenticate')
+    at Authenticator.authenticate (/home/bacarif/work/other/backend-afrikinvest/node_modules/passport/lib/authenticator.js:165:26)
+    at JwtStrategy.isAuthorized (/home/bacarif/work/other/backend-afrikinvest/dist/services/auth/strategies/jwt.js:49:41)
+    at AuthService.doAuthentication (/home/bacarif/work/other/backend-afrikinvest/dist/services/auth/index.js:146:45)
+    at /home/bacarif/work/other/backend-afrikinvest/dist/services/auth/index.js:113:33
+    at Layer.handle [as handle_request] (/home/bacarif/work/other/backend-afrikinvest/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/bacarif/work/other/backend-afrikinvest/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/bacarif/work/other/backend-afrikinvest/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/bacarif/work/other/backend-afrikinvest/node_modules/express/lib/router/layer.js:95:5)
+    at /home/bacarif/work/other/backend-afrikinvest/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/bacarif/work/other/backend-afrikinvest/node_modules/express/lib/router/index.js:341:12)
+    at next (/home/bacarif/work/other/backend-afrikinvest/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/bacarif/work/other/backend-afrikinvest/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/bacarif/work/other/backend-afrikinvest/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/bacarif/work/other/backend-afrikinvest/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/bacarif/work/other/backend-afrikinvest/node_modules/express/lib/router/index.js:323:13)
+    at /home/bacarif/work/other/backend-afrikinvest/node_modules/express/lib/router/index.js:284:7
+2022-08-18 07:48:28 info: Initializing ORM connection...
+2022-08-18 07:48:28 error: TypeORMError: No connection options were found in any orm configuration files.
+    at new TypeORMError (E:\backend-afrikinvest-main\backend-afrikinvest-main\node_modules\typeorm\error\TypeORMError.js:9:28)
+    at ConnectionOptionsReader.<anonymous> (E:\backend-afrikinvest-main\backend-afrikinvest-main\node_modules\typeorm\connection\ConnectionOptionsReader.js:40:35)
+    at step (E:\backend-afrikinvest-main\backend-afrikinvest-main\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
+    at Object.next (E:\backend-afrikinvest-main\backend-afrikinvest-main\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
+    at fulfilled (E:\backend-afrikinvest-main\backend-afrikinvest-main\node_modules\typeorm\node_modules\tslib\tslib.js:114:62)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2022-08-18 07:53:50 info: Initializing ORM connection...
+2022-08-18 07:53:50 error: TypeORMError: No connection options were found in any orm configuration files.
+    at new TypeORMError (E:\backend-afrikinvest-main\backend-afrikinvest-main\node_modules\typeorm\error\TypeORMError.js:9:28)
+    at ConnectionOptionsReader.<anonymous> (E:\backend-afrikinvest-main\backend-afrikinvest-main\node_modules\typeorm\connection\ConnectionOptionsReader.js:40:35)
+    at step (E:\backend-afrikinvest-main\backend-afrikinvest-main\node_modules\typeorm\node_modules\tslib\tslib.js:143:27)
+    at Object.next (E:\backend-afrikinvest-main\backend-afrikinvest-main\node_modules\typeorm\node_modules\tslib\tslib.js:124:57)
+    at fulfilled (E:\backend-afrikinvest-main\backend-afrikinvest-main\node_modules\typeorm\node_modules\tslib\tslib.js:114:62)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2022-08-18 08:00:58 info: Initializing ORM connection...
+2022-08-18 08:00:58 error: TypeORMError: No connection options were found in any orm configuration files.
+    at ConnectionOptionsReader.all (E:\backend-afrikinvest-main\backend-afrikinvest-main\node_modules\typeorm\connection\ConnectionOptionsReader.js:34:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ConnectionOptionsReader.get (E:\backend-afrikinvest-main\backend-afrikinvest-main\node_modules\typeorm\connection\ConnectionOptionsReader.js:42:28)
+2022-08-18 08:41:56 info: Initializing ORM connection...
+2022-08-18 08:41:56 error: TypeORMError: No connection options were found in any orm configuration files.
+    at ConnectionOptionsReader.all (E:\backend-afrikinvest-main\backend-afrikinvest-main\node_modules\typeorm\connection\ConnectionOptionsReader.js:34:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ConnectionOptionsReader.get (E:\backend-afrikinvest-main\backend-afrikinvest-main\node_modules\typeorm\connection\ConnectionOptionsReader.js:42:28)
+2022-08-18 08:47:11 info: Initializing ORM connection...
+2022-08-18 08:47:11 error: Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)
+2022-08-18 09:46:57 info: Initializing ORM connection...
+2022-08-18 09:46:57 error: Error: Access denied for user 'dbuser'@'localhost' (using password: YES)
+    at Packet.asError (E:\backend-afrikinvest-main\backend-afrikinvest-main\node_modules\mysql2\lib\packets\packet.js:728:17)
+    at ClientHandshake.execute (E:\backend-afrikinvest-main\backend-afrikinvest-main\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (E:\backend-afrikinvest-main\backend-afrikinvest-main\node_modules\mysql2\lib\connection.js:456:32)
+    at PacketParser.onPacket (E:\backend-afrikinvest-main\backend-afrikinvest-main\node_modules\mysql2\lib\connection.js:85:12)
+    at PacketParser.executeStart (E:\backend-afrikinvest-main\backend-afrikinvest-main\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (E:\backend-afrikinvest-main\backend-afrikinvest-main\node_modules\mysql2\lib\connection.js:92:25)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2022-08-18 09:47:21 info: Initializing ORM connection...
+2022-08-18 09:47:21 error: Error: Unknown database 'socialdb'
+    at Packet.asError (E:\backend-afrikinvest-main\backend-afrikinvest-main\node_modules\mysql2\lib\packets\packet.js:728:17)
+    at ClientHandshake.execute (E:\backend-afrikinvest-main\backend-afrikinvest-main\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (E:\backend-afrikinvest-main\backend-afrikinvest-main\node_modules\mysql2\lib\connection.js:456:32)
+    at PacketParser.onPacket (E:\backend-afrikinvest-main\backend-afrikinvest-main\node_modules\mysql2\lib\connection.js:85:12)
+    at PacketParser.executeStart (E:\backend-afrikinvest-main\backend-afrikinvest-main\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (E:\backend-afrikinvest-main\backend-afrikinvest-main\node_modules\mysql2\lib\connection.js:92:25)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2022-08-18 09:58:06 info: Initializing ORM connection...
+2022-08-18 09:58:06 info: node server is listening on port 3000 in development mode
