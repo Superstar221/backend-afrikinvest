@@ -14,6 +14,8 @@ import { logger } from './config/logger';
 
 import { Server } from './api/server';
 import { RedisService } from './services/redis';
+import mongoose, {ConnectOptions} from "mongoose";
+
 
 // Startup
 (async function main() {
@@ -29,6 +31,17 @@ import { RedisService } from './services/redis';
 		const app: express.Application = new Server().app;
 		const server: HttpServer = createServer(app);
 
+		// Connect mongo
+		mongoose.connect("mongodb://127.0.0.1:27017/afrikinvest", {
+			useNewUrlParser: true,
+			autoIndex: true,
+		  } as ConnectOptions)
+		  .then((db) => {
+			console.log("Database Connected Successfuly.");
+		  })
+		  .catch((err) => {
+			console.log(err);
+		  });
 		// Start express server
 		server.listen(env.NODE_PORT);
 

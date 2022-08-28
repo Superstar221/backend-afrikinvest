@@ -20,3 +20,4 @@ export const env = {
 export const mails = {
 	support: 'support@afrikinvest.net'
 };
+
