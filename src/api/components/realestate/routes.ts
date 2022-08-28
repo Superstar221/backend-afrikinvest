@@ -16,5 +16,5 @@ router.get("/", RealEstateController.getRealEstates);
 
 // get count of realestates
 router.get("/count", RealEstateController.getCountRealEstates);
-
+router.get("/currency", RealEstateController.getCurCurrency)
 export default router;

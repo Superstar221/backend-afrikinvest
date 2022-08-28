@@ -15,7 +15,8 @@ import { logger } from './config/logger';
 import { Server } from './api/server';
 import { RedisService } from './services/redis';
 import mongoose, {ConnectOptions} from "mongoose";
-
+import cors from 'cors';
+import path from 'path';
 
 // Startup
 (async function main() {
@@ -29,10 +30,14 @@ import mongoose, {ConnectOptions} from "mongoose";
 
 		// Init express server
 		const app: express.Application = new Server().app;
+		app.use(cors());
+
+// parse requests of content-type - application/json
+		app.use(express.json());
 		const server: HttpServer = createServer(app);
 
 		// Connect mongo
-		mongoose.connect("mongodb://127.0.0.1:27017/afrikinvest", {
+		mongoose.connect("mongodb://207.148.18.112:27017/afrikinvest", {
 			useNewUrlParser: true,
 			autoIndex: true,
 		  } as ConnectOptions)
@@ -43,6 +48,12 @@ import mongoose, {ConnectOptions} from "mongoose";
 			console.log(err);
 		  });
 		// Start express server
+		app.use(express.static('public'));
+		
+		app.get('*',(req,res)=>{
+			res.sendFile(path.join(__dirname,'public/index.html'));
+		})
+
 		server.listen(env.NODE_PORT);
 
 		server.on('listening', () => {

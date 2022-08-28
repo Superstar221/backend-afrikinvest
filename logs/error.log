@@ -195,3 +195,7 @@
     at E:\AfrikInvest\backend-afrikinvest-main\node_modules\express\lib\router\index.js:286:9
 2022-08-27 01:35:03 error: Error: connect ECONNREFUSED ::1:3306
     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1300:16)
+2022-08-27 18:36:11 error: Error: connect ECONNREFUSED ::1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1300:16)
+2022-08-27 22:02:13 error: Error: connect ECONNREFUSED ::1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1300:16)

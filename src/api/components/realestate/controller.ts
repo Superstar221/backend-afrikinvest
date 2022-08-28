@@ -2,7 +2,7 @@ import { Request, Response, NextFunction } from "express";
 import createError from "http-errors";
 import Realestate from "./model";
 import { Irealestate } from "./type";
-
+import axios from "axios";
 const getPagination = (page, size) => {
   const limit = size ? +size : 12;
   const offset = page ? page * limit : 0;
@@ -268,4 +268,47 @@ export const getCountRealEstates = async (
     }
     next(error);
   }
+};
+
+export const getCurCurrency = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  try {
+    const { crypto} = req.query;
+    const url="https://api.coingecko.com/api/v3/coins/"+ crypto + "/market_chart?vs_currency=eur&days=90";
+    axios.get<any>(url).then( response => {
+      let temp : any = response.data;
+      res.status(200).json({
+        temp
+      });
+  })
+  .catch(err=>{
+    console.log(err);
+      res.status(404).json({
+        message: `coingecko not available`,
+      });
+  })
+    // const currency = await Realestate.find()
+    // if (!currency) {
+    //   res.status(404).json({
+    //     message: `realEstates not available`,
+    //   });
+    // } else {
+    //   res.status(200).json({
+    //     currency,
+    //   });
+    // }
+
+} catch (error) {
+  if (error.isJoi === true) {
+    return next(
+      res.status(400).json({
+        message: "Invalid details provided.",
+      })
+    );
+  }
+  next(error);
+}
 };

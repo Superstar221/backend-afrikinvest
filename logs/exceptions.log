@@ -25,3 +25,7 @@ Error: connect ECONNREFUSED 127.0.0.1:6379
 2022-08-26 10:29:50 error: uncaughtException: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
 Error: connect ECONNREFUSED 127.0.0.1:6379
     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1300:16)
+2022-08-27 19:03:40 error: uncaughtException: This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). The promise rejected with the reason "AxiosError: Request failed with status code 404".
+UnhandledPromiseRejection: This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). The promise rejected with the reason "AxiosError: Request failed with status code 404".
+2022-08-27 19:04:49 error: uncaughtException: This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). The promise rejected with the reason "AxiosError: Request failed with status code 404".
+UnhandledPromiseRejection: This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). The promise rejected with the reason "AxiosError: Request failed with status code 404".
