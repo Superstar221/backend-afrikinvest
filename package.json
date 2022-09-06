@@ -6,6 +6,7 @@
 	"main": "./dist/app.js",
 	"private": true,
 	"scripts": {
+		"redis": "redis-server",
 		"start": "node ./dist/app.js",
 		"start-docker": "npm run build && npm start",
 		"build": "tsc -p tsconfig.json && gulp copy && gulp merge",
@@ -61,7 +62,7 @@
 		"passport": "^0.6.0",
 		"passport-http": "^0.3.0",
 		"passport-jwt": "^4.0.0",
-		"redis": "^4.2.0",
+		"redis": "^3.1.2",
 		"typeorm": "^0.3.7",
 		"uuid": "^8.3.2",
 		"validator": "^13.7.0",
